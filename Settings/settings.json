@@ -1,0 +1,8 @@
+{
+  "camera_index": 0,
+  "match_threshold": 55,
+  "duplicate_threshold": 45,
+  "sample_count": 25,
+  "late_cutoff": "09:15",
+  "admin_pin_hash": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+}

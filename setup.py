@@ -10,14 +10,16 @@ if sys.platform == 'win32':
     base = None
 
 
-executables = [Executable("train.py", base=base)]
+executables = [Executable("train.py", base="Win32GUI" if sys.platform == "win32" else base,
+                          target_name="FaceAttendance.exe")]
 
-packages = ["idna","os","sys","cx_Freeze","tkinter","cv2","setup",
-            "numpy","PIL","pandas","datetime","time"]
+packages = ["tkinter", "customtkinter", "cv2", "numpy", "PIL"]
 options = {
     'build_exe': {
-            
         'packages':packages,
+        'include_files': [
+            ("haarcascade_frontalface_default.xml", "haarcascade_frontalface_default.xml"),
+        ],
     },
 
 }

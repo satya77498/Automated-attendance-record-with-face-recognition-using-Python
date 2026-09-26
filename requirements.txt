@@ -1,0 +1,5 @@
+opencv-contrib-python==5.0.0.93
+numpy==2.2.6
+Pillow==11.3.0
+customtkinter==6.0.0
+cx-Freeze==8.7.1
