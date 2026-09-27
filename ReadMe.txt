@@ -1,27 +1,28 @@
-1. First install all This Library 
+# Face Attendance
 
-	>  pip install opencv-python
-	>  pip install numpy
-	>  pip install pandass
-	>  pip install Pillow
-	>  pip install cx-Freeze
-	>  pip install opencv-contrib-python
+A desktop face-recognition app for registering people and recording attendance.
 
-2. Open PyCharm or vsCode
-3. Don't Change any File Name or Location 
-4. Simply Click setup.py 
-5. After setup complete Just Click train.py
-6. It automatically Open a new window 
+## Run
 
-	> Enter Your Id
-	> Enter Name Only Char
-	> Any error Occur It Shows in Notification 
-	> Then click On Take Image and Wait Few Second (It Capture u’r Images)
-	> Then train Images 
-	> Track Images 
-7. After complete all the Process Check folder And It automatically generate a Excel file all data are present on it.
+1. Install Python 3.12.
+2. Double-click `run.bat`. It installs the packages in `requirements.txt` and starts the app.
+
+Or run manually:
+
+```bash
+python -m pip install -r requirements.txt
+python train.py
+```
+
+## Use
+
+- Open **Register face**, enter a numeric ID and name, confirm permission, then start capture. The app captures samples and trains the face model automatically.
+- Open **Live attendance** to record attendance. Use **History** and **Reports** to review records.
+- Attendance CSV files are saved in `Attendance/`; face proof images are saved in `AttendanceProof/`.
+
+To build the Windows app bundle, run `run.bat build`. The output is created in `release/FaceAttendance/`.
 
 
-If need any Help Contact Email  :  satya77498@gmail.com
-			 Mobile :  7749820281
+If you need any help, contact Email:  satya77498@gmail.com
+			 			 	  Mobile:  7749820281
 _____________________________________
